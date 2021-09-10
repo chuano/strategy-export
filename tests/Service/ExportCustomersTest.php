@@ -4,7 +4,7 @@ namespace Tests\Service;
 
 use App\Repository\CustomerRepository;
 use App\Service\ExportCustomers;
-use App\Service\WriterFactory;
+use App\Service\Writer\WriterFactory;
 use PHPUnit\Framework\TestCase;
 
 class ExportCustomersTest extends TestCase

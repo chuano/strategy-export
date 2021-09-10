@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Service;
+namespace App\Service\Writer;
 
 use App\Model\Customer;
 
@@ -11,7 +11,8 @@ class CsvWriter implements Writer
     public function write(array $customers, string $filename): void
     {
         $lines = array_map(
-            fn(Customer $customer) => $customer->getName() . ";" . $customer->getLastName() . ";" . $customer->getAmount(),
+            fn(Customer $customer) => $customer->getName() . ";" . $customer->getLastName(
+                ) . ";" . $customer->getAmount(),
             $customers
         );
 

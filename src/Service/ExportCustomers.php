@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Service;
 
 use App\Repository\CustomerRepository;
+use App\Service\Writer\Writer;
 
 class ExportCustomers
 {

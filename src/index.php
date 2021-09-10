@@ -2,7 +2,7 @@
 
 use App\Repository\CustomerRepository;
 use App\Service\ExportCustomers;
-use App\Service\WriterFactory;
+use App\Service\Writer\WriterFactory;
 
 require __DIR__ . "/../vendor/autoload.php";
 
